@@ -16,5 +16,11 @@ namespace Proyecto_Simulacion_Cocina
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var simulador = new Simulador();
+            simulador.Show();
+        }
     }
 }
