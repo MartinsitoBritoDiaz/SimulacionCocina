@@ -38,6 +38,7 @@ namespace Proyecto_Simulacion_Cocina
             this.CascaraArrozpictureBox = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Relojlabel = new System.Windows.Forms.Label();
             this.TiempoEstimadonumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,13 +48,6 @@ namespace Proyecto_Simulacion_Cocina
             this.Estado3RadioButton = new System.Windows.Forms.RadioButton();
             this.Estado2RadioButton = new System.Windows.Forms.RadioButton();
             this.Estado1RadioButton = new System.Windows.Forms.RadioButton();
-            this.Perilla7pictureBox = new System.Windows.Forms.PictureBox();
-            this.Perilla6pictureBox = new System.Windows.Forms.PictureBox();
-            this.Perilla5pictureBox = new System.Windows.Forms.PictureBox();
-            this.Perilla4pictureBox = new System.Windows.Forms.PictureBox();
-            this.Perilla3pictureBox = new System.Windows.Forms.PictureBox();
-            this.Perilla2pictureBox = new System.Windows.Forms.PictureBox();
-            this.Perilla1pictureBox = new System.Windows.Forms.PictureBox();
             this.LenaradioButton = new System.Windows.Forms.RadioButton();
             this.HojasradioButton = new System.Windows.Forms.RadioButton();
             this.CascaraArrozradioButton = new System.Windows.Forms.RadioButton();
@@ -61,7 +55,6 @@ namespace Proyecto_Simulacion_Cocina
             this.ChuletaCerdoradioButton = new System.Windows.Forms.RadioButton();
             this.BeefSteakradioButton = new System.Windows.Forms.RadioButton();
             this.PechugaPolloradioButton = new System.Windows.Forms.RadioButton();
-            this.Relojlabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.KcalnumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
@@ -70,24 +63,47 @@ namespace Proyecto_Simulacion_Cocina
             this.CaloriasnumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.KcalQuemadasnumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.Perilla1pictureBox = new System.Windows.Forms.PictureBox();
+            this.Perilla2pictureBox = new System.Windows.Forms.PictureBox();
+            this.Perilla3pictureBox = new System.Windows.Forms.PictureBox();
+            this.Perilla4pictureBox = new System.Windows.Forms.PictureBox();
+            this.Perilla5pictureBox = new System.Windows.Forms.PictureBox();
+            this.Perilla6pictureBox = new System.Windows.Forms.PictureBox();
+            this.Fuego0pictureBox = new System.Windows.Forms.PictureBox();
+            this.Fuego1pictureBox = new System.Windows.Forms.PictureBox();
+            this.Fuego2pictureBox = new System.Windows.Forms.PictureBox();
+            this.Fuego3pictureBox = new System.Windows.Forms.PictureBox();
+            this.Fuego4pictureBox = new System.Windows.Forms.PictureBox();
+            this.Fuego5pictureBox = new System.Windows.Forms.PictureBox();
+            this.SartenCarneCrudopictureBox = new System.Windows.Forms.PictureBox();
+            this.SartenCarneCocinadapictureBox = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LenapictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HojaspictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CascaraArrozpictureBox)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TiempoEstimadonumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Perilla7pictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Perilla6pictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Perilla5pictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Perilla4pictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Perilla3pictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Perilla2pictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Perilla1pictureBox)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.KcalnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CantidadACocinarnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CaloriasnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.KcalQuemadasnumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Perilla1pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Perilla2pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Perilla3pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Perilla4pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Perilla5pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Perilla6pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Fuego0pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Fuego1pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Fuego2pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Fuego3pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Fuego4pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Fuego5pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SartenCarneCrudopictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SartenCarneCocinadapictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // timer
@@ -155,6 +171,11 @@ namespace Proyecto_Simulacion_Cocina
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.Perilla6pictureBox);
+            this.groupBox1.Controls.Add(this.Perilla5pictureBox);
+            this.groupBox1.Controls.Add(this.Perilla4pictureBox);
+            this.groupBox1.Controls.Add(this.Perilla3pictureBox);
+            this.groupBox1.Controls.Add(this.Perilla2pictureBox);
             this.groupBox1.Controls.Add(this.Relojlabel);
             this.groupBox1.Controls.Add(this.TiempoEstimadonumericUpDown);
             this.groupBox1.Controls.Add(this.label4);
@@ -165,20 +186,25 @@ namespace Proyecto_Simulacion_Cocina
             this.groupBox1.Controls.Add(this.Estado3RadioButton);
             this.groupBox1.Controls.Add(this.Estado2RadioButton);
             this.groupBox1.Controls.Add(this.Estado1RadioButton);
-            this.groupBox1.Controls.Add(this.Perilla7pictureBox);
-            this.groupBox1.Controls.Add(this.Perilla6pictureBox);
-            this.groupBox1.Controls.Add(this.Perilla5pictureBox);
-            this.groupBox1.Controls.Add(this.Perilla4pictureBox);
-            this.groupBox1.Controls.Add(this.Perilla3pictureBox);
-            this.groupBox1.Controls.Add(this.Perilla2pictureBox);
             this.groupBox1.Controls.Add(this.Perilla1pictureBox);
             this.groupBox1.Location = new System.Drawing.Point(1020, 172);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(331, 347);
             this.groupBox1.TabIndex = 31;
             this.groupBox1.TabStop = false;
+            // 
+            // Relojlabel
+            // 
+            this.Relojlabel.AutoSize = true;
+            this.Relojlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Relojlabel.Location = new System.Drawing.Point(236, 248);
+            this.Relojlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Relojlabel.Name = "Relojlabel";
+            this.Relojlabel.Size = new System.Drawing.Size(57, 25);
+            this.Relojlabel.TabIndex = 44;
+            this.Relojlabel.Text = "0:0:0";
             // 
             // TiempoEstimadonumericUpDown
             // 
@@ -186,7 +212,7 @@ namespace Proyecto_Simulacion_Cocina
             this.TiempoEstimadonumericUpDown.Enabled = false;
             this.TiempoEstimadonumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TiempoEstimadonumericUpDown.Location = new System.Drawing.Point(241, 288);
-            this.TiempoEstimadonumericUpDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TiempoEstimadonumericUpDown.Margin = new System.Windows.Forms.Padding(4);
             this.TiempoEstimadonumericUpDown.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -297,89 +323,6 @@ namespace Proyecto_Simulacion_Cocina
             this.Estado1RadioButton.UseVisualStyleBackColor = true;
             this.Estado1RadioButton.CheckedChanged += new System.EventHandler(this.Estado1RadioButton_CheckedChanged_1);
             // 
-            // Perilla7pictureBox
-            // 
-            this.Perilla7pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Perilla7pictureBox.Image")));
-            this.Perilla7pictureBox.Location = new System.Drawing.Point(83, 66);
-            this.Perilla7pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Perilla7pictureBox.Name = "Perilla7pictureBox";
-            this.Perilla7pictureBox.Size = new System.Drawing.Size(123, 119);
-            this.Perilla7pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Perilla7pictureBox.TabIndex = 33;
-            this.Perilla7pictureBox.TabStop = false;
-            this.Perilla7pictureBox.Visible = false;
-            // 
-            // Perilla6pictureBox
-            // 
-            this.Perilla6pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Perilla6pictureBox.Image")));
-            this.Perilla6pictureBox.Location = new System.Drawing.Point(83, 66);
-            this.Perilla6pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Perilla6pictureBox.Name = "Perilla6pictureBox";
-            this.Perilla6pictureBox.Size = new System.Drawing.Size(123, 119);
-            this.Perilla6pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Perilla6pictureBox.TabIndex = 32;
-            this.Perilla6pictureBox.TabStop = false;
-            this.Perilla6pictureBox.Visible = false;
-            // 
-            // Perilla5pictureBox
-            // 
-            this.Perilla5pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Perilla5pictureBox.Image")));
-            this.Perilla5pictureBox.Location = new System.Drawing.Point(83, 66);
-            this.Perilla5pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Perilla5pictureBox.Name = "Perilla5pictureBox";
-            this.Perilla5pictureBox.Size = new System.Drawing.Size(123, 119);
-            this.Perilla5pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Perilla5pictureBox.TabIndex = 31;
-            this.Perilla5pictureBox.TabStop = false;
-            this.Perilla5pictureBox.Visible = false;
-            // 
-            // Perilla4pictureBox
-            // 
-            this.Perilla4pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Perilla4pictureBox.Image")));
-            this.Perilla4pictureBox.Location = new System.Drawing.Point(83, 66);
-            this.Perilla4pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Perilla4pictureBox.Name = "Perilla4pictureBox";
-            this.Perilla4pictureBox.Size = new System.Drawing.Size(123, 119);
-            this.Perilla4pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Perilla4pictureBox.TabIndex = 30;
-            this.Perilla4pictureBox.TabStop = false;
-            this.Perilla4pictureBox.Visible = false;
-            // 
-            // Perilla3pictureBox
-            // 
-            this.Perilla3pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Perilla3pictureBox.Image")));
-            this.Perilla3pictureBox.Location = new System.Drawing.Point(83, 66);
-            this.Perilla3pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Perilla3pictureBox.Name = "Perilla3pictureBox";
-            this.Perilla3pictureBox.Size = new System.Drawing.Size(123, 119);
-            this.Perilla3pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Perilla3pictureBox.TabIndex = 29;
-            this.Perilla3pictureBox.TabStop = false;
-            this.Perilla3pictureBox.Visible = false;
-            // 
-            // Perilla2pictureBox
-            // 
-            this.Perilla2pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Perilla2pictureBox.Image")));
-            this.Perilla2pictureBox.Location = new System.Drawing.Point(83, 66);
-            this.Perilla2pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Perilla2pictureBox.Name = "Perilla2pictureBox";
-            this.Perilla2pictureBox.Size = new System.Drawing.Size(123, 119);
-            this.Perilla2pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Perilla2pictureBox.TabIndex = 28;
-            this.Perilla2pictureBox.TabStop = false;
-            this.Perilla2pictureBox.Visible = false;
-            // 
-            // Perilla1pictureBox
-            // 
-            this.Perilla1pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Perilla1pictureBox.Image")));
-            this.Perilla1pictureBox.Location = new System.Drawing.Point(83, 66);
-            this.Perilla1pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Perilla1pictureBox.Name = "Perilla1pictureBox";
-            this.Perilla1pictureBox.Size = new System.Drawing.Size(123, 119);
-            this.Perilla1pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Perilla1pictureBox.TabIndex = 27;
-            this.Perilla1pictureBox.TabStop = false;
-            // 
             // LenaradioButton
             // 
             this.LenaradioButton.AutoSize = true;
@@ -426,9 +369,9 @@ namespace Proyecto_Simulacion_Cocina
             this.groupBox3.Controls.Add(this.PechugaPolloradioButton);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(17, 98);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(375, 206);
             this.groupBox3.TabIndex = 44;
             this.groupBox3.TabStop = false;
@@ -475,17 +418,6 @@ namespace Proyecto_Simulacion_Cocina
             this.PechugaPolloradioButton.Text = "Pechuga de Pollo(145cal/100gr)";
             this.PechugaPolloradioButton.UseVisualStyleBackColor = true;
             this.PechugaPolloradioButton.CheckedChanged += new System.EventHandler(this.PechugaPolloradioButton_CheckedChanged);
-            // 
-            // Relojlabel
-            // 
-            this.Relojlabel.AutoSize = true;
-            this.Relojlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Relojlabel.Location = new System.Drawing.Point(236, 248);
-            this.Relojlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Relojlabel.Name = "Relojlabel";
-            this.Relojlabel.Size = new System.Drawing.Size(57, 25);
-            this.Relojlabel.TabIndex = 44;
-            this.Relojlabel.Text = "0:0:0";
             // 
             // label3
             // 
@@ -598,11 +530,193 @@ namespace Proyecto_Simulacion_Cocina
             this.KcalQuemadasnumericUpDown.Size = new System.Drawing.Size(93, 30);
             this.KcalQuemadasnumericUpDown.TabIndex = 52;
             // 
+            // Perilla1pictureBox
+            // 
+            this.Perilla1pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Perilla1pictureBox.Image")));
+            this.Perilla1pictureBox.Location = new System.Drawing.Point(83, 66);
+            this.Perilla1pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Perilla1pictureBox.Name = "Perilla1pictureBox";
+            this.Perilla1pictureBox.Size = new System.Drawing.Size(123, 119);
+            this.Perilla1pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Perilla1pictureBox.TabIndex = 27;
+            this.Perilla1pictureBox.TabStop = false;
+            // 
+            // Perilla2pictureBox
+            // 
+            this.Perilla2pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Perilla2pictureBox.Image")));
+            this.Perilla2pictureBox.Location = new System.Drawing.Point(83, 66);
+            this.Perilla2pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Perilla2pictureBox.Name = "Perilla2pictureBox";
+            this.Perilla2pictureBox.Size = new System.Drawing.Size(123, 119);
+            this.Perilla2pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Perilla2pictureBox.TabIndex = 53;
+            this.Perilla2pictureBox.TabStop = false;
+            // 
+            // Perilla3pictureBox
+            // 
+            this.Perilla3pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Perilla3pictureBox.Image")));
+            this.Perilla3pictureBox.Location = new System.Drawing.Point(83, 66);
+            this.Perilla3pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Perilla3pictureBox.Name = "Perilla3pictureBox";
+            this.Perilla3pictureBox.Size = new System.Drawing.Size(123, 119);
+            this.Perilla3pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Perilla3pictureBox.TabIndex = 54;
+            this.Perilla3pictureBox.TabStop = false;
+            // 
+            // Perilla4pictureBox
+            // 
+            this.Perilla4pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Perilla4pictureBox.Image")));
+            this.Perilla4pictureBox.Location = new System.Drawing.Point(83, 66);
+            this.Perilla4pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Perilla4pictureBox.Name = "Perilla4pictureBox";
+            this.Perilla4pictureBox.Size = new System.Drawing.Size(123, 119);
+            this.Perilla4pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Perilla4pictureBox.TabIndex = 55;
+            this.Perilla4pictureBox.TabStop = false;
+            // 
+            // Perilla5pictureBox
+            // 
+            this.Perilla5pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Perilla5pictureBox.Image")));
+            this.Perilla5pictureBox.Location = new System.Drawing.Point(83, 66);
+            this.Perilla5pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Perilla5pictureBox.Name = "Perilla5pictureBox";
+            this.Perilla5pictureBox.Size = new System.Drawing.Size(123, 119);
+            this.Perilla5pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Perilla5pictureBox.TabIndex = 56;
+            this.Perilla5pictureBox.TabStop = false;
+            // 
+            // Perilla6pictureBox
+            // 
+            this.Perilla6pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Perilla6pictureBox.Image")));
+            this.Perilla6pictureBox.Location = new System.Drawing.Point(83, 66);
+            this.Perilla6pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Perilla6pictureBox.Name = "Perilla6pictureBox";
+            this.Perilla6pictureBox.Size = new System.Drawing.Size(123, 119);
+            this.Perilla6pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Perilla6pictureBox.TabIndex = 57;
+            this.Perilla6pictureBox.TabStop = false;
+            // 
+            // Fuego0pictureBox
+            // 
+            this.Fuego0pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Fuego0pictureBox.Image")));
+            this.Fuego0pictureBox.Location = new System.Drawing.Point(527, 194);
+            this.Fuego0pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Fuego0pictureBox.Name = "Fuego0pictureBox";
+            this.Fuego0pictureBox.Size = new System.Drawing.Size(147, 133);
+            this.Fuego0pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Fuego0pictureBox.TabIndex = 58;
+            this.Fuego0pictureBox.TabStop = false;
+            this.Fuego0pictureBox.Visible = false;
+            // 
+            // Fuego1pictureBox
+            // 
+            this.Fuego1pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Fuego1pictureBox.Image")));
+            this.Fuego1pictureBox.Location = new System.Drawing.Point(527, 194);
+            this.Fuego1pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Fuego1pictureBox.Name = "Fuego1pictureBox";
+            this.Fuego1pictureBox.Size = new System.Drawing.Size(147, 133);
+            this.Fuego1pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Fuego1pictureBox.TabIndex = 59;
+            this.Fuego1pictureBox.TabStop = false;
+            this.Fuego1pictureBox.Visible = false;
+            // 
+            // Fuego2pictureBox
+            // 
+            this.Fuego2pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Fuego2pictureBox.Image")));
+            this.Fuego2pictureBox.Location = new System.Drawing.Point(527, 194);
+            this.Fuego2pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Fuego2pictureBox.Name = "Fuego2pictureBox";
+            this.Fuego2pictureBox.Size = new System.Drawing.Size(147, 133);
+            this.Fuego2pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Fuego2pictureBox.TabIndex = 60;
+            this.Fuego2pictureBox.TabStop = false;
+            this.Fuego2pictureBox.Visible = false;
+            // 
+            // Fuego3pictureBox
+            // 
+            this.Fuego3pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Fuego3pictureBox.Image")));
+            this.Fuego3pictureBox.Location = new System.Drawing.Point(527, 194);
+            this.Fuego3pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Fuego3pictureBox.Name = "Fuego3pictureBox";
+            this.Fuego3pictureBox.Size = new System.Drawing.Size(147, 133);
+            this.Fuego3pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Fuego3pictureBox.TabIndex = 61;
+            this.Fuego3pictureBox.TabStop = false;
+            this.Fuego3pictureBox.Visible = false;
+            // 
+            // Fuego4pictureBox
+            // 
+            this.Fuego4pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Fuego4pictureBox.Image")));
+            this.Fuego4pictureBox.Location = new System.Drawing.Point(527, 194);
+            this.Fuego4pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Fuego4pictureBox.Name = "Fuego4pictureBox";
+            this.Fuego4pictureBox.Size = new System.Drawing.Size(147, 133);
+            this.Fuego4pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Fuego4pictureBox.TabIndex = 62;
+            this.Fuego4pictureBox.TabStop = false;
+            this.Fuego4pictureBox.Visible = false;
+            // 
+            // Fuego5pictureBox
+            // 
+            this.Fuego5pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Fuego5pictureBox.Image")));
+            this.Fuego5pictureBox.Location = new System.Drawing.Point(527, 194);
+            this.Fuego5pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Fuego5pictureBox.Name = "Fuego5pictureBox";
+            this.Fuego5pictureBox.Size = new System.Drawing.Size(147, 133);
+            this.Fuego5pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Fuego5pictureBox.TabIndex = 63;
+            this.Fuego5pictureBox.TabStop = false;
+            this.Fuego5pictureBox.Visible = false;
+            // 
+            // SartenCarneCrudopictureBox
+            // 
+            this.SartenCarneCrudopictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SartenCarneCrudopictureBox.Image")));
+            this.SartenCarneCrudopictureBox.Location = new System.Drawing.Point(707, 194);
+            this.SartenCarneCrudopictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SartenCarneCrudopictureBox.Name = "SartenCarneCrudopictureBox";
+            this.SartenCarneCrudopictureBox.Size = new System.Drawing.Size(172, 133);
+            this.SartenCarneCrudopictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SartenCarneCrudopictureBox.TabIndex = 64;
+            this.SartenCarneCrudopictureBox.TabStop = false;
+            this.SartenCarneCrudopictureBox.Visible = false;
+            // 
+            // SartenCarneCocinadapictureBox
+            // 
+            this.SartenCarneCocinadapictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SartenCarneCocinadapictureBox.Image")));
+            this.SartenCarneCocinadapictureBox.Location = new System.Drawing.Point(707, 190);
+            this.SartenCarneCocinadapictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SartenCarneCocinadapictureBox.Name = "SartenCarneCocinadapictureBox";
+            this.SartenCarneCocinadapictureBox.Size = new System.Drawing.Size(172, 137);
+            this.SartenCarneCocinadapictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SartenCarneCocinadapictureBox.TabIndex = 65;
+            this.SartenCarneCocinadapictureBox.TabStop = false;
+            this.SartenCarneCocinadapictureBox.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(707, 190);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(172, 137);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 66;
+            this.pictureBox1.TabStop = false;
+            // 
             // Simulador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1364, 611);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.SartenCarneCocinadapictureBox);
+            this.Controls.Add(this.SartenCarneCrudopictureBox);
+            this.Controls.Add(this.Fuego5pictureBox);
+            this.Controls.Add(this.Fuego4pictureBox);
+            this.Controls.Add(this.Fuego3pictureBox);
+            this.Controls.Add(this.Fuego2pictureBox);
+            this.Controls.Add(this.Fuego1pictureBox);
+            this.Controls.Add(this.Fuego0pictureBox);
             this.Controls.Add(this.KcalQuemadasnumericUpDown);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.CaloriasnumericUpDown);
@@ -624,6 +738,7 @@ namespace Proyecto_Simulacion_Cocina
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Simulador";
             this.Text = "Simulador";
+            this.Load += new System.EventHandler(this.Simulador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LenapictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HojaspictureBox)).EndInit();
@@ -631,19 +746,27 @@ namespace Proyecto_Simulacion_Cocina
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TiempoEstimadonumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Perilla7pictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Perilla6pictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Perilla5pictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Perilla4pictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Perilla3pictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Perilla2pictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Perilla1pictureBox)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.KcalnumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CantidadACocinarnumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CaloriasnumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.KcalQuemadasnumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Perilla1pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Perilla2pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Perilla3pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Perilla4pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Perilla5pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Perilla6pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Fuego0pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Fuego1pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Fuego2pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Fuego3pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Fuego4pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Fuego5pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SartenCarneCrudopictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SartenCarneCocinadapictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -663,13 +786,6 @@ namespace Proyecto_Simulacion_Cocina
         private System.Windows.Forms.RadioButton Estado3RadioButton;
         private System.Windows.Forms.RadioButton Estado2RadioButton;
         private System.Windows.Forms.RadioButton Estado1RadioButton;
-        private System.Windows.Forms.PictureBox Perilla7pictureBox;
-        private System.Windows.Forms.PictureBox Perilla6pictureBox;
-        private System.Windows.Forms.PictureBox Perilla5pictureBox;
-        private System.Windows.Forms.PictureBox Perilla4pictureBox;
-        private System.Windows.Forms.PictureBox Perilla3pictureBox;
-        private System.Windows.Forms.PictureBox Perilla2pictureBox;
-        private System.Windows.Forms.PictureBox Perilla1pictureBox;
         private System.Windows.Forms.RadioButton LenaradioButton;
         private System.Windows.Forms.RadioButton HojasradioButton;
         private System.Windows.Forms.RadioButton CascaraArrozradioButton;
@@ -689,5 +805,20 @@ namespace Proyecto_Simulacion_Cocina
         private System.Windows.Forms.NumericUpDown CaloriasnumericUpDown;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.NumericUpDown KcalQuemadasnumericUpDown;
+        private System.Windows.Forms.PictureBox Perilla5pictureBox;
+        private System.Windows.Forms.PictureBox Perilla4pictureBox;
+        private System.Windows.Forms.PictureBox Perilla3pictureBox;
+        private System.Windows.Forms.PictureBox Perilla2pictureBox;
+        private System.Windows.Forms.PictureBox Perilla1pictureBox;
+        private System.Windows.Forms.PictureBox Perilla6pictureBox;
+        private System.Windows.Forms.PictureBox Fuego0pictureBox;
+        private System.Windows.Forms.PictureBox Fuego1pictureBox;
+        private System.Windows.Forms.PictureBox Fuego2pictureBox;
+        private System.Windows.Forms.PictureBox Fuego3pictureBox;
+        private System.Windows.Forms.PictureBox Fuego4pictureBox;
+        private System.Windows.Forms.PictureBox Fuego5pictureBox;
+        private System.Windows.Forms.PictureBox SartenCarneCrudopictureBox;
+        private System.Windows.Forms.PictureBox SartenCarneCocinadapictureBox;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

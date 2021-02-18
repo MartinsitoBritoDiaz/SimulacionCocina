@@ -212,10 +212,16 @@ namespace Proyecto_Simulacion_Cocina
             Perilla4pictureBox.Visible = false;
             Perilla5pictureBox.Visible = false;
             Perilla6pictureBox.Visible = false;
+
             Perilla1pictureBox.Visible = true;
 
-           
+            Fuego1pictureBox.Visible = false;
+            Fuego2pictureBox.Visible = false;
+            Fuego3pictureBox.Visible = false;
+            Fuego4pictureBox.Visible = false;
+            Fuego5pictureBox.Visible = false;
 
+            Fuego0pictureBox.Visible = true;
 
             kcalActual = 0;
             NumeroActual = 0;
@@ -235,6 +241,14 @@ namespace Proyecto_Simulacion_Cocina
             Perilla6pictureBox.Visible = false;
             Perilla2pictureBox.Visible = true;
 
+            Fuego0pictureBox.Visible = false;
+            Fuego2pictureBox.Visible = false;
+            Fuego3pictureBox.Visible = false;
+            Fuego4pictureBox.Visible = false;
+            Fuego5pictureBox.Visible = false;
+
+            Fuego1pictureBox.Visible = true;
+
             NumeroActual = 5; //se dividiran las Kcal en 5 para reducir la temperatura
             VerificarKcal();
             
@@ -252,6 +266,14 @@ namespace Proyecto_Simulacion_Cocina
             Perilla6pictureBox.Visible = false;
             Perilla3pictureBox.Visible = true;
 
+            Fuego1pictureBox.Visible = false;
+            Fuego0pictureBox.Visible = false;
+            Fuego3pictureBox.Visible = false;
+            Fuego4pictureBox.Visible = false;
+            Fuego5pictureBox.Visible = false;
+
+            Fuego2pictureBox.Visible = true;
+
             NumeroActual = 4;
             VerificarKcal();
             timer.Start();
@@ -267,6 +289,14 @@ namespace Proyecto_Simulacion_Cocina
             Perilla5pictureBox.Visible = false;
             Perilla6pictureBox.Visible = false;
             Perilla4pictureBox.Visible = true;
+
+            Fuego1pictureBox.Visible = false;
+            Fuego2pictureBox.Visible = false;
+            Fuego0pictureBox.Visible = false;
+            Fuego4pictureBox.Visible = false;
+            Fuego5pictureBox.Visible = false;
+
+            Fuego3pictureBox.Visible = true;
 
             NumeroActual = 3;
             VerificarKcal();
@@ -284,6 +314,15 @@ namespace Proyecto_Simulacion_Cocina
             Perilla6pictureBox.Visible = false;
             Perilla5pictureBox.Visible = true;
 
+
+            Fuego1pictureBox.Visible = false;
+            Fuego2pictureBox.Visible = false;
+            Fuego3pictureBox.Visible = false;
+            Fuego0pictureBox.Visible = false;
+            Fuego5pictureBox.Visible = false;
+
+            Fuego4pictureBox.Visible = true;
+
             NumeroActual = 2;
             VerificarKcal();
             timer.Start();
@@ -299,6 +338,14 @@ namespace Proyecto_Simulacion_Cocina
             Perilla4pictureBox.Visible = false;
             Perilla5pictureBox.Visible = false;
             Perilla6pictureBox.Visible = true;
+
+            Fuego1pictureBox.Visible = false;
+            Fuego2pictureBox.Visible = false;
+            Fuego3pictureBox.Visible = false;
+            Fuego4pictureBox.Visible = false;
+            Fuego0pictureBox.Visible = false;
+
+            Fuego5pictureBox.Visible = true;
 
             NumeroActual = 1;
             VerificarKcal();
@@ -383,6 +430,11 @@ namespace Proyecto_Simulacion_Cocina
         }
 
         private void TiemponumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Simulador_Load(object sender, EventArgs e)
         {
 
         }
