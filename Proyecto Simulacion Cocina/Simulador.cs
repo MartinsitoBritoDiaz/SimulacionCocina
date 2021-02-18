@@ -16,7 +16,7 @@ namespace Proyecto_Simulacion_Cocina
         int i = 0;
         int kcalLena=4650;
         int kcalHojas=4800;
-        int kcalCascaraArroz = 0; //por hora
+        int kcalCascaraArroz = 3281; //por hora
 
         double kcalActual=0; //para saber el nivel de kcal que se esta quemando en el momento
         int NumeroActual = 0; //Para verificar en que numero esta el boton
@@ -26,7 +26,7 @@ namespace Proyecto_Simulacion_Cocina
         double CalChuletaCerdo = 2.31; //por gramo
 
         double CalActual = 0; //calorias de la porcion actual
-        double tiempoestimado = 0;
+        
 
         double CaloriasTotal = 0;
 
@@ -35,9 +35,9 @@ namespace Proyecto_Simulacion_Cocina
 
 
 
-        int seg = 0;
-        int min = 0;
-        int hor = 0;
+        
+        int minuto = 0;
+        int hora = 0;
                     
         bool paso = true; //creo que se puede eliminar
 
@@ -77,14 +77,15 @@ namespace Proyecto_Simulacion_Cocina
                 paso = false;
                 timer.Stop();
                 MessageBox.Show("Debe Seleccionar un combustible");
+                Estado1RadioButton.Checked = true;
             }
             else
-            
                 if (PechugaPolloradioButton.Checked == false && BeefSteakradioButton.Checked == false && ChuletaCerdoradioButton.Checked == false)
                 {
                     paso = false;
                     timer.Stop();
                     MessageBox.Show("Debe Seleccionar un alimento");
+                    Estado1RadioButton.Checked = true;
                 }
                 else
                     if (CantidadACocinarnumericUpDown.Value == 0)
@@ -92,6 +93,7 @@ namespace Proyecto_Simulacion_Cocina
                         paso = false;
                         timer.Stop();
                         MessageBox.Show("Debe digitar una cantidad a cocinar");
+                        Estado1RadioButton.Checked = true;
                     }
                     else
                         paso = true;
@@ -102,27 +104,21 @@ namespace Proyecto_Simulacion_Cocina
 
         private void Ejecucion()
         {
-            Validar();
+           // Validar();
 
             if (paso)
             {
 
-                tiempoestimado = (CalActual / kcalActual);
-                TiempoEstimadonumericUpDown.Value = Convert.ToDecimal(tiempoestimado/10);
+                
 
 
-                if(min == 60)
+                if(minuto == 60)
                 {
-                    hor += 1;
-                    min = 0;
+                    hora += 1;
+                    minuto = 0;
                 }
-                if (seg == 61)
-                {
-                    min += 1;
-                    seg = 0;
-                }
-                seg += 1;
-                Relojlabel.Text = hor.ToString() + ":" + min.ToString() + ":" + seg.ToString();
+                minuto += 1;
+                Relojlabel.Text = hora.ToString() + ":" + minuto.ToString();
                 //TiemponumericUpDown.Value += Convert.ToDecimal(0.01); //no hace lo que debe, corregir, para que de 0.60 salte a 1.00
 
 
@@ -135,30 +131,29 @@ namespace Proyecto_Simulacion_Cocina
                 {
                     timer.Stop();
                     MessageBox.Show("Se ha terminado de cocinar", "Aviso!");
+
+                    InformacionrichTextBox.Text = ("Cocinada por Completo                                       " +
+                       "KiloCalorias Quemadas: " + kcaloriasQuemadas.ToString() + "                                       " +
+                       "Calorias: " + CalActual + "                                                                    " +
+                       "Tiempo " + hora.ToString() + ":" + minuto.ToString()
+                        );
+
                     kcaloriasQuemadas = 0;
                     KcaloriasPorQuemar = 0;
                     CantidadACocinarnumericUpDown.Value = 0;
+
+                    
+                       
+
+                        hora = 0;
+                        minuto = 0;
                     
 
                     Estado1RadioButton.Checked = true;
                 }
                 else
                 {
-                    if (Estado1RadioButton.Checked == true)
-                    {
-                        timer.Stop();
-                        if (KcaloriasPorQuemar <= (CalActual / 2))
-                        {
-                            DialogResult dialogResult = MessageBox.Show("La carne ha quedado a termino medio, Desea seguir cocinando la carne?", "Aviso!", MessageBoxButtons.YesNo);
-                            if (dialogResult == DialogResult.No)
-                            {
-                                kcaloriasQuemadas = 0;
-                                KcaloriasPorQuemar = 0;
-                                CantidadACocinarnumericUpDown.Value = 0;
-                            }
-                        }
-
-                    }
+                    
 
                     int aux = 20;
                         
@@ -223,9 +218,67 @@ namespace Proyecto_Simulacion_Cocina
 
             Fuego0pictureBox.Visible = true;
 
+            if(KcaloriasPorQuemar!=0 && KcaloriasPorQuemar != kcalActual)
+            {
+                if (Estado1RadioButton.Checked == true)
+                {
+                    timer.Stop();
+                    if (KcaloriasPorQuemar <= (CalActual / 2))
+                    {
+                        DialogResult dialogResult = MessageBox.Show("La carne ha quedado a termino medio, Desea seguir cocinando la carne?", "Aviso!", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.No)
+                        {
+                            InformacionrichTextBox.Text = ("Termino Medio: " + "                                       " +
+                                "KiloCalorias Quemadas: " + kcaloriasQuemadas.ToString() + "                                       " +
+                                "Calorias: " + CalActual + "                                                            " +
+                                "Tiempo " + hora.ToString() + ":" + minuto.ToString()
+                                 );
+
+                            kcaloriasQuemadas = 0;
+                            KcaloriasPorQuemar = 0;
+                            CantidadACocinarnumericUpDown.Value = 0;
+
+                            
+                            hora = 0;
+                            minuto = 0;
+                        }
+                       
+                    }
+                    else
+                    {
+                        if(KcaloriasPorQuemar<=(CalActual*0.25) && KcaloriasPorQuemar > 0)
+                        {
+                            DialogResult dialogResult = MessageBox.Show("La carne ha quedado a termino 3/4, Desea seguir cocinando la carne?", "Aviso!", MessageBoxButtons.YesNo);
+                            if (dialogResult == DialogResult.No)
+                            {
+
+                                InformacionrichTextBox.Text = ("Tres Cuartos                                     " +
+                                "KiloCalorias Quemadas: " + kcaloriasQuemadas.ToString() + "                                       " +
+                                "Calorias: " + CalActual + "                                                               " +
+                                "Tiempo " + hora.ToString() + ":" + minuto.ToString()
+                                 );
+
+                                kcaloriasQuemadas = 0;
+                                KcaloriasPorQuemar = 0;
+                                CantidadACocinarnumericUpDown.Value = 0;
+
+                                
+
+                                hora = 0;
+                                minuto = 0;
+                            }
+                            
+                        }
+                        
+                    }
+
+                }
+            }
+
             kcalActual = 0;
             NumeroActual = 0;
-            tiempoestimado = 0;
+           
+
             
         }
 
@@ -251,7 +304,11 @@ namespace Proyecto_Simulacion_Cocina
 
             NumeroActual = 5; //se dividiran las Kcal en 5 para reducir la temperatura
             VerificarKcal();
-            
+
+            if(Estado2RadioButton.Checked==true)
+            Validar();
+
+            if(paso)
             timer.Start();
 
         }
@@ -276,7 +333,12 @@ namespace Proyecto_Simulacion_Cocina
 
             NumeroActual = 4;
             VerificarKcal();
-            timer.Start();
+
+            if (Estado2RadioButton.Checked == true)
+                Validar();
+
+            if (paso)
+                timer.Start();
         }
 
         private void Estado4RadioButton_CheckedChanged_1(object sender, EventArgs e)
@@ -300,7 +362,12 @@ namespace Proyecto_Simulacion_Cocina
 
             NumeroActual = 3;
             VerificarKcal();
-            timer.Start();
+
+            if (Estado2RadioButton.Checked == true)
+                Validar();
+
+            if (paso)
+                timer.Start();
         }
 
         private void Estado5RadioButton_CheckedChanged_1(object sender, EventArgs e)
@@ -325,7 +392,12 @@ namespace Proyecto_Simulacion_Cocina
 
             NumeroActual = 2;
             VerificarKcal();
-            timer.Start();
+
+            if (Estado2RadioButton.Checked == true)
+                Validar();
+
+            if (paso)
+                timer.Start();
         }
 
         private void Estado6RadioButton_CheckedChanged_1(object sender, EventArgs e)
@@ -349,7 +421,12 @@ namespace Proyecto_Simulacion_Cocina
 
             NumeroActual = 1;
             VerificarKcal();
-            timer.Start();
+
+            if (Estado2RadioButton.Checked == true)
+                Validar();
+
+            if (paso)
+                timer.Start();
         }
 
         private void LenaradioButton_CheckedChanged(object sender, EventArgs e)
@@ -362,7 +439,7 @@ namespace Proyecto_Simulacion_Cocina
 
         private void HojasradioButton_CheckedChanged(object sender, EventArgs e)
         {
-            Validar();
+            
             if (i!=0)
                 MessageBox.Show("Cambiando Combustible...");
             timer.Stop();
