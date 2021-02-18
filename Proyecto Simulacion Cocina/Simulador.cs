@@ -14,6 +14,29 @@ namespace Proyecto_Simulacion_Cocina
     public partial class Simulador : Form
     {
         int i = 0;
+        int kcalLena=4650;
+        int kcalHojas=4800;
+        int kcalCascaraArroz = 0; //por hora
+
+        double kcalActual=0; //para saber el nivel de kcal que se esta quemando en el momento
+        int NumeroActual = 0; //Para verificar en que numero esta el boton
+
+        double CalPechugaPollo = 1.45;
+        double CalBistec = 2.71;
+        double CalChuletaCerdo = 2.31; //por gramo
+
+        double CalActual = 0; //calorias de la porcion actual
+        double tiempoestimado = 0;
+
+        double CaloriasTotal = 0;
+
+        double KcaloriasPorQuemar = 0;
+        double kcaloriasQuemadas = 0;
+
+
+
+        bool paso = true; //creo que se puede eliminar
+
         public Simulador()
         {
             InitializeComponent();
@@ -21,18 +44,266 @@ namespace Proyecto_Simulacion_Cocina
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Timer.Enabled = true;
+            timer.Enabled = true;
         }
 
         private void Timer_Tick(object sender, EventArgs e)
         {
             Ejecucion();
         }
+
+        public void VerificarKcal()
+        {
+            if (LenaradioButton.Checked == true)
+                kcalActual = ((kcalLena / 60) / NumeroActual); //Kcal/hora de la Leña dividido entre 60 para darlo por minuto
+            else
+               if (HojasradioButton.Checked == true)
+                kcalActual = (kcalHojas / 60) / NumeroActual;
+            else
+                   if (CascaraArrozradioButton.Checked == true)
+                kcalActual = (kcalCascaraArroz / 60) / NumeroActual;
+
+        }
+
+        public void Validar()
+        {
+            if (LenaradioButton.Checked == false && HojasradioButton.Checked == false && CascaraArrozradioButton.Checked == false)
+            {
+
+                paso = false;
+                timer.Stop();
+                MessageBox.Show("Debe Seleccionar un combustible");
+            }
+            else
+            
+                if (PechugaPolloradioButton.Checked == false && BeefSteakradioButton.Checked == false && ChuletaCerdoradioButton.Checked == false)
+                {
+                    paso = false;
+                    timer.Stop();
+                    MessageBox.Show("Debe Seleccionar un alimento");
+                }
+                else
+                    if (CantidadACocinarnumericUpDown.Value == 0)
+                    {
+                        paso = false;
+                        timer.Stop();
+                        MessageBox.Show("Debe digitar una cantidad a cocinar");
+                    }
+                    else
+                        paso = true;
+            
+                
+
+
+                
+        }
+
+        
+
         private void Ejecucion()
         {
+            Validar();
+
+            if (paso)
+            {
+
+                tiempoestimado = (CalActual / kcalActual);
+                TiempoEstimadonumericUpDown.Value = Convert.ToDecimal(tiempoestimado/10);
+
+                TiemponumericUpDown.Value += Convert.ToDecimal(0.01); //no hace lo que debe, corregir, para que de 0.60 salte a 1.00
+
+
+
+                KcaloriasPorQuemar -= kcalActual;
+                kcaloriasQuemadas += kcalActual;
+                KcalQuemadasnumericUpDown.Value = Convert.ToDecimal(kcaloriasQuemadas);
+
+                if (KcaloriasPorQuemar <= 0)
+                {
+                    timer.Stop();
+                    MessageBox.Show("Se ha terminado de cocinar");
+                    kcaloriasQuemadas = 0;
+                    KcaloriasPorQuemar = 0;
+                    CantidadACocinarnumericUpDown.Value = 0;
+
+                    Estado1RadioButton.Checked = true;
+                }
+                else
+                {
+                    if (Estado1RadioButton.Checked == true)
+                    {
+                        timer.Stop();
+                        if (KcaloriasPorQuemar <= (CalActual / 2))
+                            MessageBox.Show("La carne ha quedado a termino medio");
+
+                    }
+                        
+
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                i++;
+            }
             
 
-            i++;
+        }
+
+        
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            LenaradioButton.Checked = true;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            HojasradioButton.Checked = true;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            CascaraArrozradioButton.Checked = true;
+        }
+
+        private void Estado1RadioButton_CheckedChanged_1(object sender, EventArgs e)
+        {
+            timer.Stop();
+            Perilla2pictureBox.Visible = false;
+            Perilla3pictureBox.Visible = false;
+            Perilla4pictureBox.Visible = false;
+            Perilla5pictureBox.Visible = false;
+            Perilla6pictureBox.Visible = false;
+            Perilla1pictureBox.Visible = true;
+
+           
+
+
+            kcalActual = 0;
+            NumeroActual = 0;
+            tiempoestimado = 0;
+            
+        }
+
+       
+        private void Estado2RadioButton_CheckedChanged_1(object sender, EventArgs e)
+        {
+            //Boton en 1
+            timer.Stop();
+            Perilla1pictureBox.Visible = false;
+            Perilla3pictureBox.Visible = false;
+            Perilla4pictureBox.Visible = false;
+            Perilla5pictureBox.Visible = false;
+            Perilla6pictureBox.Visible = false;
+            Perilla2pictureBox.Visible = true;
+
+            NumeroActual = 5; //se dividiran las Kcal en 5 para reducir la temperatura
+            VerificarKcal();
+            
+            timer.Start();
+
+        }
+
+        private void Estado3RadioButton_CheckedChanged_1(object sender, EventArgs e)
+        {
+            //Boton en 2
+            Perilla1pictureBox.Visible = false;
+            Perilla2pictureBox.Visible = false;
+            Perilla4pictureBox.Visible = false;
+            Perilla5pictureBox.Visible = false;
+            Perilla6pictureBox.Visible = false;
+            Perilla3pictureBox.Visible = true;
+
+            NumeroActual = 4;
+            VerificarKcal();
+            timer.Start();
+        }
+
+        private void Estado4RadioButton_CheckedChanged_1(object sender, EventArgs e)
+        {
+            //Boton en 3
+            timer.Stop();
+            Perilla1pictureBox.Visible = false;
+            Perilla2pictureBox.Visible = false;
+            Perilla3pictureBox.Visible = false;
+            Perilla5pictureBox.Visible = false;
+            Perilla6pictureBox.Visible = false;
+            Perilla4pictureBox.Visible = true;
+
+            NumeroActual = 3;
+            VerificarKcal();
+            timer.Start();
+        }
+
+        private void Estado5RadioButton_CheckedChanged_1(object sender, EventArgs e)
+        {
+            //Boton en 4
+            timer.Stop();
+            Perilla1pictureBox.Visible = false;
+            Perilla2pictureBox.Visible = false;
+            Perilla3pictureBox.Visible = false;
+            Perilla4pictureBox.Visible = false;
+            Perilla6pictureBox.Visible = false;
+            Perilla5pictureBox.Visible = true;
+
+            NumeroActual = 2;
+            VerificarKcal();
+            timer.Start();
+        }
+
+        private void Estado6RadioButton_CheckedChanged_1(object sender, EventArgs e)
+        {
+            //Boton en 5
+            timer.Stop();
+            Perilla1pictureBox.Visible = false;
+            Perilla2pictureBox.Visible = false;
+            Perilla3pictureBox.Visible = false;
+            Perilla4pictureBox.Visible = false;
+            Perilla5pictureBox.Visible = false;
+            Perilla6pictureBox.Visible = true;
+
+            NumeroActual = 1;
+            VerificarKcal();
+            timer.Start();
+        }
+
+        private void LenaradioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            if (i != 0)
+                MessageBox.Show("Cambiando Combustible...");
+            timer.Stop();
+            KcalnumericUpDown.Value = kcalLena;
+        }
+
+        private void HojasradioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            Validar();
+            if (i!=0)
+                MessageBox.Show("Cambiando Combustible...");
+            timer.Stop();
+            KcalnumericUpDown.Value = kcalHojas;
+        }
+
+        private void CascaraArrozradioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            if (i != 0)
+                MessageBox.Show("Cambiando Combustible...");
+            timer.Stop();
+            KcalnumericUpDown.Value = kcalCascaraArroz;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -40,64 +311,51 @@ namespace Proyecto_Simulacion_Cocina
 
         }
 
-        private void Estado1RadioButton_CheckedChanged(object sender, EventArgs e)
+        private void PechugaPolloradioButton_CheckedChanged(object sender, EventArgs e)
         {
-            Perilla2pictureBox.Visible = false;
-            Perilla3pictureBox.Visible = false;
-            Perilla4pictureBox.Visible = false;
-            Perilla5pictureBox.Visible = false;
-            Perilla6pictureBox.Visible = false;
-            Perilla1pictureBox.Visible = true;
+            timer.Stop();
+            CaloriasnumericUpDown.Value = (CantidadACocinarnumericUpDown.Value * Convert.ToDecimal(CalPechugaPollo));
+            CalActual = Convert.ToDouble(CaloriasnumericUpDown.Value);
+            KcaloriasPorQuemar = CalActual;//revisar necesidad, posiblemente solo se necesite una de las 2
+        }
+       
+        private void CantidadACocinarnumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            timer.Stop();
+            if (PechugaPolloradioButton.Checked==true)//luego puede cambiarse por lo que se vaya a poner
+                CaloriasTotal = (Convert.ToDouble(CantidadACocinarnumericUpDown.Value) * CalPechugaPollo);
+            else
+                if(BeefSteakradioButton.Checked==true)
+                CaloriasTotal = (Convert.ToDouble(CantidadACocinarnumericUpDown.Value) * CalBistec);
+                else
+                    if(ChuletaCerdoradioButton.Checked==true)
+                        CaloriasTotal = (Convert.ToDouble(CantidadACocinarnumericUpDown.Value) * CalChuletaCerdo);
+
+            CaloriasnumericUpDown.Value = Convert.ToDecimal(CaloriasTotal);
+            CalActual = Convert.ToDouble(CaloriasnumericUpDown.Value);
+            KcaloriasPorQuemar = CalActual;//revisar necesidad, posiblemente solo se necesite una de las 2
         }
 
-        private void Estado2RadioButton_CheckedChanged(object sender, EventArgs e)
+        private void BeefSteakradioButton_CheckedChanged(object sender, EventArgs e)
         {
-            Perilla1pictureBox.Visible = false;
-            Perilla3pictureBox.Visible = false;
-            Perilla4pictureBox.Visible = false;
-            Perilla5pictureBox.Visible = false;
-            Perilla6pictureBox.Visible = false;
-            Perilla2pictureBox.Visible = true;
+            timer.Stop();
+            CaloriasnumericUpDown.Value = (CantidadACocinarnumericUpDown.Value * Convert.ToDecimal(CalBistec));
+            CalActual = Convert.ToDouble(CaloriasnumericUpDown.Value);
+            KcaloriasPorQuemar = CalActual;//revisar necesidad, posiblemente solo se necesite una de las 2
         }
 
-        private void Estado3RadioButton_CheckedChanged(object sender, EventArgs e)
+
+        private void ChuletaCerdoradioButton_CheckedChanged(object sender, EventArgs e)
         {
-            Perilla1pictureBox.Visible = false;
-            Perilla2pictureBox.Visible = false;
-            Perilla4pictureBox.Visible = false;
-            Perilla5pictureBox.Visible = false;
-            Perilla6pictureBox.Visible = false;
-            Perilla3pictureBox.Visible = true;
+            timer.Stop();
+            CaloriasnumericUpDown.Value = (CantidadACocinarnumericUpDown.Value * Convert.ToDecimal(CalChuletaCerdo));
+            CalActual = Convert.ToDouble(CaloriasnumericUpDown.Value);
+            KcaloriasPorQuemar = CalActual;//revisar necesidad, posiblemente solo se necesite una de las 2
         }
 
-        private void Estado4RadioButton_CheckedChanged(object sender, EventArgs e)
+        private void CaloriasnumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            Perilla1pictureBox.Visible = false;
-            Perilla2pictureBox.Visible = false;
-            Perilla3pictureBox.Visible = false;
-            Perilla5pictureBox.Visible = false;
-            Perilla6pictureBox.Visible = false;
-            Perilla4pictureBox.Visible = true;
-        }
 
-        private void Estado5RadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            Perilla1pictureBox.Visible = false;
-            Perilla2pictureBox.Visible = false;
-            Perilla3pictureBox.Visible = false;
-            Perilla4pictureBox.Visible = false;
-            Perilla6pictureBox.Visible = false;
-            Perilla5pictureBox.Visible = true;
-        }
-
-        private void Estado6RadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            Perilla1pictureBox.Visible = false;
-            Perilla2pictureBox.Visible = false;
-            Perilla3pictureBox.Visible = false;
-            Perilla4pictureBox.Visible = false;
-            Perilla5pictureBox.Visible = false;
-            Perilla6pictureBox.Visible = true;
         }
     }
 }
