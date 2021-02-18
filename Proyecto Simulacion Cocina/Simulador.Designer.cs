@@ -77,6 +77,9 @@ namespace Proyecto_Simulacion_Cocina
             this.SartenCarneCocinadapictureBox = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.InformacionrichTextBox = new System.Windows.Forms.RichTextBox();
+            this.Pollolabel4 = new System.Windows.Forms.Label();
+            this.beeflabel8 = new System.Windows.Forms.Label();
+            this.Chuletalabel9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LenapictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HojaspictureBox)).BeginInit();
@@ -112,10 +115,10 @@ namespace Proyecto_Simulacion_Cocina
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(299, 40);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(399, 49);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(455, 388);
+            this.pictureBox2.Size = new System.Drawing.Size(607, 478);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
@@ -124,10 +127,10 @@ namespace Proyecto_Simulacion_Cocina
             // LenapictureBox
             // 
             this.LenapictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LenapictureBox.Image")));
-            this.LenapictureBox.Location = new System.Drawing.Point(377, 342);
-            this.LenapictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.LenapictureBox.Location = new System.Drawing.Point(503, 421);
+            this.LenapictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LenapictureBox.Name = "LenapictureBox";
-            this.LenapictureBox.Size = new System.Drawing.Size(70, 62);
+            this.LenapictureBox.Size = new System.Drawing.Size(93, 76);
             this.LenapictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LenapictureBox.TabIndex = 12;
             this.LenapictureBox.TabStop = false;
@@ -136,10 +139,10 @@ namespace Proyecto_Simulacion_Cocina
             // HojaspictureBox
             // 
             this.HojaspictureBox.Image = ((System.Drawing.Image)(resources.GetObject("HojaspictureBox.Image")));
-            this.HojaspictureBox.Location = new System.Drawing.Point(490, 342);
-            this.HojaspictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.HojaspictureBox.Location = new System.Drawing.Point(653, 421);
+            this.HojaspictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HojaspictureBox.Name = "HojaspictureBox";
-            this.HojaspictureBox.Size = new System.Drawing.Size(70, 62);
+            this.HojaspictureBox.Size = new System.Drawing.Size(93, 76);
             this.HojaspictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.HojaspictureBox.TabIndex = 13;
             this.HojaspictureBox.TabStop = false;
@@ -148,10 +151,10 @@ namespace Proyecto_Simulacion_Cocina
             // CascaraArrozpictureBox
             // 
             this.CascaraArrozpictureBox.Image = ((System.Drawing.Image)(resources.GetObject("CascaraArrozpictureBox.Image")));
-            this.CascaraArrozpictureBox.Location = new System.Drawing.Point(604, 342);
-            this.CascaraArrozpictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.CascaraArrozpictureBox.Location = new System.Drawing.Point(805, 421);
+            this.CascaraArrozpictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CascaraArrozpictureBox.Name = "CascaraArrozpictureBox";
-            this.CascaraArrozpictureBox.Size = new System.Drawing.Size(70, 62);
+            this.CascaraArrozpictureBox.Size = new System.Drawing.Size(93, 76);
             this.CascaraArrozpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CascaraArrozpictureBox.TabIndex = 14;
             this.CascaraArrozpictureBox.TabStop = false;
@@ -161,10 +164,9 @@ namespace Proyecto_Simulacion_Cocina
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(332, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(443, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(392, 44);
+            this.label1.Size = new System.Drawing.Size(489, 55);
             this.label1.TabIndex = 27;
             this.label1.Text = "Simulador de Cocina";
             // 
@@ -184,19 +186,21 @@ namespace Proyecto_Simulacion_Cocina
             this.groupBox1.Controls.Add(this.Estado2RadioButton);
             this.groupBox1.Controls.Add(this.Estado1RadioButton);
             this.groupBox1.Controls.Add(this.Perilla1pictureBox);
-            this.groupBox1.Location = new System.Drawing.Point(765, 140);
+            this.groupBox1.Location = new System.Drawing.Point(1020, 172);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(248, 282);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(331, 347);
             this.groupBox1.TabIndex = 31;
             this.groupBox1.TabStop = false;
             // 
             // Perilla6pictureBox
             // 
             this.Perilla6pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Perilla6pictureBox.Image")));
-            this.Perilla6pictureBox.Location = new System.Drawing.Point(62, 54);
-            this.Perilla6pictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.Perilla6pictureBox.Location = new System.Drawing.Point(83, 66);
+            this.Perilla6pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Perilla6pictureBox.Name = "Perilla6pictureBox";
-            this.Perilla6pictureBox.Size = new System.Drawing.Size(92, 97);
+            this.Perilla6pictureBox.Size = new System.Drawing.Size(123, 119);
             this.Perilla6pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Perilla6pictureBox.TabIndex = 57;
             this.Perilla6pictureBox.TabStop = false;
@@ -204,10 +208,10 @@ namespace Proyecto_Simulacion_Cocina
             // Perilla5pictureBox
             // 
             this.Perilla5pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Perilla5pictureBox.Image")));
-            this.Perilla5pictureBox.Location = new System.Drawing.Point(62, 54);
-            this.Perilla5pictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.Perilla5pictureBox.Location = new System.Drawing.Point(83, 66);
+            this.Perilla5pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Perilla5pictureBox.Name = "Perilla5pictureBox";
-            this.Perilla5pictureBox.Size = new System.Drawing.Size(92, 97);
+            this.Perilla5pictureBox.Size = new System.Drawing.Size(123, 119);
             this.Perilla5pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Perilla5pictureBox.TabIndex = 56;
             this.Perilla5pictureBox.TabStop = false;
@@ -215,10 +219,10 @@ namespace Proyecto_Simulacion_Cocina
             // Perilla4pictureBox
             // 
             this.Perilla4pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Perilla4pictureBox.Image")));
-            this.Perilla4pictureBox.Location = new System.Drawing.Point(62, 54);
-            this.Perilla4pictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.Perilla4pictureBox.Location = new System.Drawing.Point(83, 66);
+            this.Perilla4pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Perilla4pictureBox.Name = "Perilla4pictureBox";
-            this.Perilla4pictureBox.Size = new System.Drawing.Size(92, 97);
+            this.Perilla4pictureBox.Size = new System.Drawing.Size(123, 119);
             this.Perilla4pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Perilla4pictureBox.TabIndex = 55;
             this.Perilla4pictureBox.TabStop = false;
@@ -226,10 +230,10 @@ namespace Proyecto_Simulacion_Cocina
             // Perilla3pictureBox
             // 
             this.Perilla3pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Perilla3pictureBox.Image")));
-            this.Perilla3pictureBox.Location = new System.Drawing.Point(62, 54);
-            this.Perilla3pictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.Perilla3pictureBox.Location = new System.Drawing.Point(83, 66);
+            this.Perilla3pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Perilla3pictureBox.Name = "Perilla3pictureBox";
-            this.Perilla3pictureBox.Size = new System.Drawing.Size(92, 97);
+            this.Perilla3pictureBox.Size = new System.Drawing.Size(123, 119);
             this.Perilla3pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Perilla3pictureBox.TabIndex = 54;
             this.Perilla3pictureBox.TabStop = false;
@@ -237,10 +241,10 @@ namespace Proyecto_Simulacion_Cocina
             // Perilla2pictureBox
             // 
             this.Perilla2pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Perilla2pictureBox.Image")));
-            this.Perilla2pictureBox.Location = new System.Drawing.Point(62, 54);
-            this.Perilla2pictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.Perilla2pictureBox.Location = new System.Drawing.Point(83, 66);
+            this.Perilla2pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Perilla2pictureBox.Name = "Perilla2pictureBox";
-            this.Perilla2pictureBox.Size = new System.Drawing.Size(92, 97);
+            this.Perilla2pictureBox.Size = new System.Drawing.Size(123, 119);
             this.Perilla2pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Perilla2pictureBox.TabIndex = 53;
             this.Perilla2pictureBox.TabStop = false;
@@ -249,9 +253,10 @@ namespace Proyecto_Simulacion_Cocina
             // 
             this.Relojlabel.AutoSize = true;
             this.Relojlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Relojlabel.Location = new System.Drawing.Point(177, 202);
+            this.Relojlabel.Location = new System.Drawing.Point(236, 249);
+            this.Relojlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Relojlabel.Name = "Relojlabel";
-            this.Relojlabel.Size = new System.Drawing.Size(31, 20);
+            this.Relojlabel.Size = new System.Drawing.Size(40, 25);
             this.Relojlabel.TabIndex = 44;
             this.Relojlabel.Text = "0:0";
             // 
@@ -259,9 +264,10 @@ namespace Proyecto_Simulacion_Cocina
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 203);
+            this.label2.Location = new System.Drawing.Point(8, 250);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(171, 18);
+            this.label2.Size = new System.Drawing.Size(220, 24);
             this.label2.TabIndex = 40;
             this.label2.Text = "Tiempo de Transcrurrido";
             // 
@@ -269,10 +275,10 @@ namespace Proyecto_Simulacion_Cocina
             // 
             this.Estado6RadioButton.AutoSize = true;
             this.Estado6RadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Estado6RadioButton.Location = new System.Drawing.Point(23, 58);
-            this.Estado6RadioButton.Margin = new System.Windows.Forms.Padding(2);
+            this.Estado6RadioButton.Location = new System.Drawing.Point(31, 71);
+            this.Estado6RadioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Estado6RadioButton.Name = "Estado6RadioButton";
-            this.Estado6RadioButton.Size = new System.Drawing.Size(14, 13);
+            this.Estado6RadioButton.Size = new System.Drawing.Size(17, 16);
             this.Estado6RadioButton.TabIndex = 39;
             this.Estado6RadioButton.TabStop = true;
             this.Estado6RadioButton.UseVisualStyleBackColor = true;
@@ -282,10 +288,10 @@ namespace Proyecto_Simulacion_Cocina
             // 
             this.Estado5RadioButton.AutoSize = true;
             this.Estado5RadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Estado5RadioButton.Location = new System.Drawing.Point(23, 129);
-            this.Estado5RadioButton.Margin = new System.Windows.Forms.Padding(2);
+            this.Estado5RadioButton.Location = new System.Drawing.Point(31, 159);
+            this.Estado5RadioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Estado5RadioButton.Name = "Estado5RadioButton";
-            this.Estado5RadioButton.Size = new System.Drawing.Size(14, 13);
+            this.Estado5RadioButton.Size = new System.Drawing.Size(17, 16);
             this.Estado5RadioButton.TabIndex = 38;
             this.Estado5RadioButton.TabStop = true;
             this.Estado5RadioButton.UseVisualStyleBackColor = true;
@@ -295,10 +301,10 @@ namespace Proyecto_Simulacion_Cocina
             // 
             this.Estado4RadioButton.AutoSize = true;
             this.Estado4RadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Estado4RadioButton.Location = new System.Drawing.Point(100, 166);
-            this.Estado4RadioButton.Margin = new System.Windows.Forms.Padding(2);
+            this.Estado4RadioButton.Location = new System.Drawing.Point(133, 204);
+            this.Estado4RadioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Estado4RadioButton.Name = "Estado4RadioButton";
-            this.Estado4RadioButton.Size = new System.Drawing.Size(14, 13);
+            this.Estado4RadioButton.Size = new System.Drawing.Size(17, 16);
             this.Estado4RadioButton.TabIndex = 37;
             this.Estado4RadioButton.TabStop = true;
             this.Estado4RadioButton.UseVisualStyleBackColor = true;
@@ -308,10 +314,10 @@ namespace Proyecto_Simulacion_Cocina
             // 
             this.Estado3RadioButton.AutoSize = true;
             this.Estado3RadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Estado3RadioButton.Location = new System.Drawing.Point(181, 129);
-            this.Estado3RadioButton.Margin = new System.Windows.Forms.Padding(2);
+            this.Estado3RadioButton.Location = new System.Drawing.Point(241, 159);
+            this.Estado3RadioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Estado3RadioButton.Name = "Estado3RadioButton";
-            this.Estado3RadioButton.Size = new System.Drawing.Size(14, 13);
+            this.Estado3RadioButton.Size = new System.Drawing.Size(17, 16);
             this.Estado3RadioButton.TabIndex = 36;
             this.Estado3RadioButton.TabStop = true;
             this.Estado3RadioButton.UseVisualStyleBackColor = true;
@@ -321,10 +327,10 @@ namespace Proyecto_Simulacion_Cocina
             // 
             this.Estado2RadioButton.AutoSize = true;
             this.Estado2RadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Estado2RadioButton.Location = new System.Drawing.Point(181, 54);
-            this.Estado2RadioButton.Margin = new System.Windows.Forms.Padding(2);
+            this.Estado2RadioButton.Location = new System.Drawing.Point(241, 66);
+            this.Estado2RadioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Estado2RadioButton.Name = "Estado2RadioButton";
-            this.Estado2RadioButton.Size = new System.Drawing.Size(14, 13);
+            this.Estado2RadioButton.Size = new System.Drawing.Size(17, 16);
             this.Estado2RadioButton.TabIndex = 35;
             this.Estado2RadioButton.TabStop = true;
             this.Estado2RadioButton.UseVisualStyleBackColor = true;
@@ -334,10 +340,10 @@ namespace Proyecto_Simulacion_Cocina
             // 
             this.Estado1RadioButton.AutoSize = true;
             this.Estado1RadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Estado1RadioButton.Location = new System.Drawing.Point(100, 18);
-            this.Estado1RadioButton.Margin = new System.Windows.Forms.Padding(2);
+            this.Estado1RadioButton.Location = new System.Drawing.Point(133, 22);
+            this.Estado1RadioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Estado1RadioButton.Name = "Estado1RadioButton";
-            this.Estado1RadioButton.Size = new System.Drawing.Size(14, 13);
+            this.Estado1RadioButton.Size = new System.Drawing.Size(17, 16);
             this.Estado1RadioButton.TabIndex = 34;
             this.Estado1RadioButton.TabStop = true;
             this.Estado1RadioButton.UseVisualStyleBackColor = true;
@@ -346,10 +352,10 @@ namespace Proyecto_Simulacion_Cocina
             // Perilla1pictureBox
             // 
             this.Perilla1pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Perilla1pictureBox.Image")));
-            this.Perilla1pictureBox.Location = new System.Drawing.Point(62, 54);
-            this.Perilla1pictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.Perilla1pictureBox.Location = new System.Drawing.Point(83, 66);
+            this.Perilla1pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Perilla1pictureBox.Name = "Perilla1pictureBox";
-            this.Perilla1pictureBox.Size = new System.Drawing.Size(92, 97);
+            this.Perilla1pictureBox.Size = new System.Drawing.Size(123, 119);
             this.Perilla1pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Perilla1pictureBox.TabIndex = 27;
             this.Perilla1pictureBox.TabStop = false;
@@ -359,10 +365,10 @@ namespace Proyecto_Simulacion_Cocina
             this.LenaradioButton.AutoSize = true;
             this.LenaradioButton.Cursor = System.Windows.Forms.Cursors.Default;
             this.LenaradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LenaradioButton.Location = new System.Drawing.Point(403, 408);
-            this.LenaradioButton.Margin = new System.Windows.Forms.Padding(2);
+            this.LenaradioButton.Location = new System.Drawing.Point(537, 502);
+            this.LenaradioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LenaradioButton.Name = "LenaradioButton";
-            this.LenaradioButton.Size = new System.Drawing.Size(14, 13);
+            this.LenaradioButton.Size = new System.Drawing.Size(17, 16);
             this.LenaradioButton.TabIndex = 41;
             this.LenaradioButton.UseVisualStyleBackColor = true;
             this.LenaradioButton.CheckedChanged += new System.EventHandler(this.LenaradioButton_CheckedChanged);
@@ -371,10 +377,10 @@ namespace Proyecto_Simulacion_Cocina
             // 
             this.HojasradioButton.AutoSize = true;
             this.HojasradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HojasradioButton.Location = new System.Drawing.Point(520, 408);
-            this.HojasradioButton.Margin = new System.Windows.Forms.Padding(2);
+            this.HojasradioButton.Location = new System.Drawing.Point(693, 502);
+            this.HojasradioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HojasradioButton.Name = "HojasradioButton";
-            this.HojasradioButton.Size = new System.Drawing.Size(14, 13);
+            this.HojasradioButton.Size = new System.Drawing.Size(17, 16);
             this.HojasradioButton.TabIndex = 42;
             this.HojasradioButton.TabStop = true;
             this.HojasradioButton.UseVisualStyleBackColor = true;
@@ -384,10 +390,10 @@ namespace Proyecto_Simulacion_Cocina
             // 
             this.CascaraArrozradioButton.AutoSize = true;
             this.CascaraArrozradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CascaraArrozradioButton.Location = new System.Drawing.Point(636, 408);
-            this.CascaraArrozradioButton.Margin = new System.Windows.Forms.Padding(2);
+            this.CascaraArrozradioButton.Location = new System.Drawing.Point(848, 502);
+            this.CascaraArrozradioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CascaraArrozradioButton.Name = "CascaraArrozradioButton";
-            this.CascaraArrozradioButton.Size = new System.Drawing.Size(14, 13);
+            this.CascaraArrozradioButton.Size = new System.Drawing.Size(17, 16);
             this.CascaraArrozradioButton.TabIndex = 43;
             this.CascaraArrozradioButton.TabStop = true;
             this.CascaraArrozradioButton.UseVisualStyleBackColor = true;
@@ -395,6 +401,9 @@ namespace Proyecto_Simulacion_Cocina
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.Chuletalabel9);
+            this.groupBox3.Controls.Add(this.beeflabel8);
+            this.groupBox3.Controls.Add(this.Pollolabel4);
             this.groupBox3.Controls.Add(this.ChuletaCerdoradioButton);
             this.groupBox3.Controls.Add(this.BeefSteakradioButton);
             this.groupBox3.Controls.Add(this.PechugaPolloradioButton);
@@ -403,9 +412,11 @@ namespace Proyecto_Simulacion_Cocina
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.CaloriasnumericUpDown);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(12, 40);
+            this.groupBox3.Location = new System.Drawing.Point(16, 49);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(282, 242);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Size = new System.Drawing.Size(376, 330);
             this.groupBox3.TabIndex = 44;
             this.groupBox3.TabStop = false;
             // 
@@ -413,10 +424,10 @@ namespace Proyecto_Simulacion_Cocina
             // 
             this.ChuletaCerdoradioButton.AutoSize = true;
             this.ChuletaCerdoradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChuletaCerdoradioButton.Location = new System.Drawing.Point(14, 118);
-            this.ChuletaCerdoradioButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ChuletaCerdoradioButton.Location = new System.Drawing.Point(19, 145);
+            this.ChuletaCerdoradioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChuletaCerdoradioButton.Name = "ChuletaCerdoradioButton";
-            this.ChuletaCerdoradioButton.Size = new System.Drawing.Size(151, 24);
+            this.ChuletaCerdoradioButton.Size = new System.Drawing.Size(187, 29);
             this.ChuletaCerdoradioButton.TabIndex = 41;
             this.ChuletaCerdoradioButton.TabStop = true;
             this.ChuletaCerdoradioButton.Text = "Chuleta de Cerdo";
@@ -427,10 +438,10 @@ namespace Proyecto_Simulacion_Cocina
             // 
             this.BeefSteakradioButton.AutoSize = true;
             this.BeefSteakradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BeefSteakradioButton.Location = new System.Drawing.Point(14, 75);
-            this.BeefSteakradioButton.Margin = new System.Windows.Forms.Padding(2);
+            this.BeefSteakradioButton.Location = new System.Drawing.Point(19, 92);
+            this.BeefSteakradioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BeefSteakradioButton.Name = "BeefSteakradioButton";
-            this.BeefSteakradioButton.Size = new System.Drawing.Size(107, 24);
+            this.BeefSteakradioButton.Size = new System.Drawing.Size(129, 29);
             this.BeefSteakradioButton.TabIndex = 40;
             this.BeefSteakradioButton.TabStop = true;
             this.BeefSteakradioButton.Text = "Beef Steak";
@@ -441,10 +452,10 @@ namespace Proyecto_Simulacion_Cocina
             // 
             this.PechugaPolloradioButton.AutoSize = true;
             this.PechugaPolloradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PechugaPolloradioButton.Location = new System.Drawing.Point(14, 34);
-            this.PechugaPolloradioButton.Margin = new System.Windows.Forms.Padding(2);
+            this.PechugaPolloradioButton.Location = new System.Drawing.Point(19, 42);
+            this.PechugaPolloradioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PechugaPolloradioButton.Name = "PechugaPolloradioButton";
-            this.PechugaPolloradioButton.Size = new System.Drawing.Size(150, 24);
+            this.PechugaPolloradioButton.Size = new System.Drawing.Size(186, 29);
             this.PechugaPolloradioButton.TabIndex = 39;
             this.PechugaPolloradioButton.TabStop = true;
             this.PechugaPolloradioButton.Text = "Pechuga de Pollo";
@@ -455,14 +466,15 @@ namespace Proyecto_Simulacion_Cocina
             // 
             this.CantidadACocinarnumericUpDown.DecimalPlaces = 2;
             this.CantidadACocinarnumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CantidadACocinarnumericUpDown.Location = new System.Drawing.Point(196, 158);
+            this.CantidadACocinarnumericUpDown.Location = new System.Drawing.Point(261, 194);
+            this.CantidadACocinarnumericUpDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CantidadACocinarnumericUpDown.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.CantidadACocinarnumericUpDown.Name = "CantidadACocinarnumericUpDown";
-            this.CantidadACocinarnumericUpDown.Size = new System.Drawing.Size(70, 26);
+            this.CantidadACocinarnumericUpDown.Size = new System.Drawing.Size(93, 30);
             this.CantidadACocinarnumericUpDown.TabIndex = 48;
             this.CantidadACocinarnumericUpDown.ValueChanged += new System.EventHandler(this.CantidadACocinarnumericUpDown_ValueChanged);
             // 
@@ -470,9 +482,10 @@ namespace Proyecto_Simulacion_Cocina
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(7, 160);
+            this.label5.Location = new System.Drawing.Point(9, 197);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(172, 20);
+            this.label5.Size = new System.Drawing.Size(216, 25);
             this.label5.TabIndex = 47;
             this.label5.Text = "Cantidad a Cocinar (gr)";
             // 
@@ -480,9 +493,10 @@ namespace Proyecto_Simulacion_Cocina
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(7, 194);
+            this.label6.Location = new System.Drawing.Point(9, 239);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 20);
+            this.label6.Size = new System.Drawing.Size(84, 25);
             this.label6.TabIndex = 49;
             this.label6.Text = "Calorias";
             // 
@@ -491,7 +505,8 @@ namespace Proyecto_Simulacion_Cocina
             this.CaloriasnumericUpDown.DecimalPlaces = 2;
             this.CaloriasnumericUpDown.Enabled = false;
             this.CaloriasnumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CaloriasnumericUpDown.Location = new System.Drawing.Point(196, 190);
+            this.CaloriasnumericUpDown.Location = new System.Drawing.Point(261, 234);
+            this.CaloriasnumericUpDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CaloriasnumericUpDown.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -499,7 +514,7 @@ namespace Proyecto_Simulacion_Cocina
             0});
             this.CaloriasnumericUpDown.Name = "CaloriasnumericUpDown";
             this.CaloriasnumericUpDown.ReadOnly = true;
-            this.CaloriasnumericUpDown.Size = new System.Drawing.Size(70, 26);
+            this.CaloriasnumericUpDown.Size = new System.Drawing.Size(93, 30);
             this.CaloriasnumericUpDown.TabIndex = 50;
             this.CaloriasnumericUpDown.ValueChanged += new System.EventHandler(this.CaloriasnumericUpDown_ValueChanged);
             // 
@@ -507,9 +522,10 @@ namespace Proyecto_Simulacion_Cocina
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(316, 91);
+            this.label3.Location = new System.Drawing.Point(421, 112);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 20);
+            this.label3.Size = new System.Drawing.Size(130, 25);
             this.label3.TabIndex = 45;
             this.label3.Text = "Kcal/Kg/Hora";
             // 
@@ -517,7 +533,8 @@ namespace Proyecto_Simulacion_Cocina
             // 
             this.KcalnumericUpDown.Enabled = false;
             this.KcalnumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.KcalnumericUpDown.Location = new System.Drawing.Point(423, 89);
+            this.KcalnumericUpDown.Location = new System.Drawing.Point(564, 110);
+            this.KcalnumericUpDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.KcalnumericUpDown.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -525,16 +542,17 @@ namespace Proyecto_Simulacion_Cocina
             0});
             this.KcalnumericUpDown.Name = "KcalnumericUpDown";
             this.KcalnumericUpDown.ReadOnly = true;
-            this.KcalnumericUpDown.Size = new System.Drawing.Size(70, 26);
+            this.KcalnumericUpDown.Size = new System.Drawing.Size(93, 30);
             this.KcalnumericUpDown.TabIndex = 46;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(541, 91);
+            this.label7.Location = new System.Drawing.Point(721, 112);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(121, 20);
+            this.label7.Size = new System.Drawing.Size(153, 25);
             this.label7.TabIndex = 51;
             this.label7.Text = "Kcal Quemadas";
             // 
@@ -543,7 +561,8 @@ namespace Proyecto_Simulacion_Cocina
             this.KcalQuemadasnumericUpDown.DecimalPlaces = 2;
             this.KcalQuemadasnumericUpDown.Enabled = false;
             this.KcalQuemadasnumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.KcalQuemadasnumericUpDown.Location = new System.Drawing.Point(668, 89);
+            this.KcalQuemadasnumericUpDown.Location = new System.Drawing.Point(891, 110);
+            this.KcalQuemadasnumericUpDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.KcalQuemadasnumericUpDown.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -551,16 +570,16 @@ namespace Proyecto_Simulacion_Cocina
             0});
             this.KcalQuemadasnumericUpDown.Name = "KcalQuemadasnumericUpDown";
             this.KcalQuemadasnumericUpDown.ReadOnly = true;
-            this.KcalQuemadasnumericUpDown.Size = new System.Drawing.Size(70, 26);
+            this.KcalQuemadasnumericUpDown.Size = new System.Drawing.Size(93, 30);
             this.KcalQuemadasnumericUpDown.TabIndex = 52;
             // 
             // Fuego0pictureBox
             // 
             this.Fuego0pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Fuego0pictureBox.Image")));
-            this.Fuego0pictureBox.Location = new System.Drawing.Point(395, 158);
-            this.Fuego0pictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.Fuego0pictureBox.Location = new System.Drawing.Point(527, 194);
+            this.Fuego0pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Fuego0pictureBox.Name = "Fuego0pictureBox";
-            this.Fuego0pictureBox.Size = new System.Drawing.Size(110, 108);
+            this.Fuego0pictureBox.Size = new System.Drawing.Size(147, 133);
             this.Fuego0pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Fuego0pictureBox.TabIndex = 58;
             this.Fuego0pictureBox.TabStop = false;
@@ -569,10 +588,10 @@ namespace Proyecto_Simulacion_Cocina
             // Fuego1pictureBox
             // 
             this.Fuego1pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Fuego1pictureBox.Image")));
-            this.Fuego1pictureBox.Location = new System.Drawing.Point(395, 158);
-            this.Fuego1pictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.Fuego1pictureBox.Location = new System.Drawing.Point(527, 194);
+            this.Fuego1pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Fuego1pictureBox.Name = "Fuego1pictureBox";
-            this.Fuego1pictureBox.Size = new System.Drawing.Size(110, 108);
+            this.Fuego1pictureBox.Size = new System.Drawing.Size(147, 133);
             this.Fuego1pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Fuego1pictureBox.TabIndex = 59;
             this.Fuego1pictureBox.TabStop = false;
@@ -581,10 +600,10 @@ namespace Proyecto_Simulacion_Cocina
             // Fuego2pictureBox
             // 
             this.Fuego2pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Fuego2pictureBox.Image")));
-            this.Fuego2pictureBox.Location = new System.Drawing.Point(395, 158);
-            this.Fuego2pictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.Fuego2pictureBox.Location = new System.Drawing.Point(527, 194);
+            this.Fuego2pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Fuego2pictureBox.Name = "Fuego2pictureBox";
-            this.Fuego2pictureBox.Size = new System.Drawing.Size(110, 108);
+            this.Fuego2pictureBox.Size = new System.Drawing.Size(147, 133);
             this.Fuego2pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Fuego2pictureBox.TabIndex = 60;
             this.Fuego2pictureBox.TabStop = false;
@@ -593,10 +612,10 @@ namespace Proyecto_Simulacion_Cocina
             // Fuego3pictureBox
             // 
             this.Fuego3pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Fuego3pictureBox.Image")));
-            this.Fuego3pictureBox.Location = new System.Drawing.Point(395, 158);
-            this.Fuego3pictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.Fuego3pictureBox.Location = new System.Drawing.Point(527, 194);
+            this.Fuego3pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Fuego3pictureBox.Name = "Fuego3pictureBox";
-            this.Fuego3pictureBox.Size = new System.Drawing.Size(110, 108);
+            this.Fuego3pictureBox.Size = new System.Drawing.Size(147, 133);
             this.Fuego3pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Fuego3pictureBox.TabIndex = 61;
             this.Fuego3pictureBox.TabStop = false;
@@ -605,10 +624,10 @@ namespace Proyecto_Simulacion_Cocina
             // Fuego4pictureBox
             // 
             this.Fuego4pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Fuego4pictureBox.Image")));
-            this.Fuego4pictureBox.Location = new System.Drawing.Point(395, 158);
-            this.Fuego4pictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.Fuego4pictureBox.Location = new System.Drawing.Point(527, 194);
+            this.Fuego4pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Fuego4pictureBox.Name = "Fuego4pictureBox";
-            this.Fuego4pictureBox.Size = new System.Drawing.Size(110, 108);
+            this.Fuego4pictureBox.Size = new System.Drawing.Size(147, 133);
             this.Fuego4pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Fuego4pictureBox.TabIndex = 62;
             this.Fuego4pictureBox.TabStop = false;
@@ -617,10 +636,10 @@ namespace Proyecto_Simulacion_Cocina
             // Fuego5pictureBox
             // 
             this.Fuego5pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Fuego5pictureBox.Image")));
-            this.Fuego5pictureBox.Location = new System.Drawing.Point(395, 154);
-            this.Fuego5pictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.Fuego5pictureBox.Location = new System.Drawing.Point(527, 190);
+            this.Fuego5pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Fuego5pictureBox.Name = "Fuego5pictureBox";
-            this.Fuego5pictureBox.Size = new System.Drawing.Size(110, 112);
+            this.Fuego5pictureBox.Size = new System.Drawing.Size(147, 138);
             this.Fuego5pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Fuego5pictureBox.TabIndex = 63;
             this.Fuego5pictureBox.TabStop = false;
@@ -629,10 +648,10 @@ namespace Proyecto_Simulacion_Cocina
             // SartenCarneCrudopictureBox
             // 
             this.SartenCarneCrudopictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SartenCarneCrudopictureBox.Image")));
-            this.SartenCarneCrudopictureBox.Location = new System.Drawing.Point(530, 158);
-            this.SartenCarneCrudopictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.SartenCarneCrudopictureBox.Location = new System.Drawing.Point(707, 194);
+            this.SartenCarneCrudopictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SartenCarneCrudopictureBox.Name = "SartenCarneCrudopictureBox";
-            this.SartenCarneCrudopictureBox.Size = new System.Drawing.Size(129, 108);
+            this.SartenCarneCrudopictureBox.Size = new System.Drawing.Size(172, 133);
             this.SartenCarneCrudopictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.SartenCarneCrudopictureBox.TabIndex = 64;
             this.SartenCarneCrudopictureBox.TabStop = false;
@@ -641,10 +660,10 @@ namespace Proyecto_Simulacion_Cocina
             // SartenCarneCocinadapictureBox
             // 
             this.SartenCarneCocinadapictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SartenCarneCocinadapictureBox.Image")));
-            this.SartenCarneCocinadapictureBox.Location = new System.Drawing.Point(530, 154);
-            this.SartenCarneCocinadapictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.SartenCarneCocinadapictureBox.Location = new System.Drawing.Point(707, 190);
+            this.SartenCarneCocinadapictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SartenCarneCocinadapictureBox.Name = "SartenCarneCocinadapictureBox";
-            this.SartenCarneCocinadapictureBox.Size = new System.Drawing.Size(129, 111);
+            this.SartenCarneCocinadapictureBox.Size = new System.Drawing.Size(172, 137);
             this.SartenCarneCocinadapictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.SartenCarneCocinadapictureBox.TabIndex = 65;
             this.SartenCarneCocinadapictureBox.TabStop = false;
@@ -653,27 +672,64 @@ namespace Proyecto_Simulacion_Cocina
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(530, 154);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(707, 190);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(129, 111);
+            this.pictureBox1.Size = new System.Drawing.Size(172, 137);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 66;
             this.pictureBox1.TabStop = false;
             // 
             // InformacionrichTextBox
             // 
-            this.InformacionrichTextBox.Location = new System.Drawing.Point(12, 288);
+            this.InformacionrichTextBox.Location = new System.Drawing.Point(17, 387);
+            this.InformacionrichTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.InformacionrichTextBox.Name = "InformacionrichTextBox";
-            this.InformacionrichTextBox.Size = new System.Drawing.Size(282, 161);
+            this.InformacionrichTextBox.Size = new System.Drawing.Size(375, 264);
             this.InformacionrichTextBox.TabIndex = 69;
             this.InformacionrichTextBox.Text = "";
             // 
+            // Pollolabel4
+            // 
+            this.Pollolabel4.AutoSize = true;
+            this.Pollolabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pollolabel4.Location = new System.Drawing.Point(14, 282);
+            this.Pollolabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Pollolabel4.Name = "Pollolabel4";
+            this.Pollolabel4.Size = new System.Drawing.Size(273, 25);
+            this.Pollolabel4.TabIndex = 51;
+            this.Pollolabel4.Text = "150 gr - Pollo = 5.0 g de grasa";
+            this.Pollolabel4.Visible = false;
+            // 
+            // beeflabel8
+            // 
+            this.beeflabel8.AutoSize = true;
+            this.beeflabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.beeflabel8.Location = new System.Drawing.Point(14, 282);
+            this.beeflabel8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.beeflabel8.Name = "beeflabel8";
+            this.beeflabel8.Size = new System.Drawing.Size(321, 25);
+            this.beeflabel8.TabIndex = 52;
+            this.beeflabel8.Text = "100 gr - Beef Steak = 10 g de grasa";
+            this.beeflabel8.Visible = false;
+            // 
+            // Chuletalabel9
+            // 
+            this.Chuletalabel9.AutoSize = true;
+            this.Chuletalabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Chuletalabel9.Location = new System.Drawing.Point(14, 282);
+            this.Chuletalabel9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Chuletalabel9.Name = "Chuletalabel9";
+            this.Chuletalabel9.Size = new System.Drawing.Size(309, 25);
+            this.Chuletalabel9.TabIndex = 53;
+            this.Chuletalabel9.Text = "100 gr - Chuleta = 6.96 g de grasa";
+            this.Chuletalabel9.Visible = false;
+            // 
             // Simulador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1023, 496);
+            this.ClientSize = new System.Drawing.Size(1364, 664);
             this.Controls.Add(this.InformacionrichTextBox);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.SartenCarneCocinadapictureBox);
@@ -698,7 +754,7 @@ namespace Proyecto_Simulacion_Cocina
             this.Controls.Add(this.HojaspictureBox);
             this.Controls.Add(this.LenapictureBox);
             this.Controls.Add(this.pictureBox2);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Simulador";
             this.Text = "Simulador";
             this.Load += new System.EventHandler(this.Simulador_Load);
@@ -781,5 +837,8 @@ namespace Proyecto_Simulacion_Cocina
         private System.Windows.Forms.PictureBox SartenCarneCocinadapictureBox;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.RichTextBox InformacionrichTextBox;
+        private System.Windows.Forms.Label Chuletalabel9;
+        private System.Windows.Forms.Label beeflabel8;
+        private System.Windows.Forms.Label Pollolabel4;
     }
 }

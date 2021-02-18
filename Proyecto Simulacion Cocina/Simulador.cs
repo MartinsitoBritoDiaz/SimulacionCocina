@@ -462,6 +462,9 @@ namespace Proyecto_Simulacion_Cocina
         private void PechugaPolloradioButton_CheckedChanged(object sender, EventArgs e)
         {
             timer.Stop();
+            Chuletalabel9.Visible = false;
+            beeflabel8.Visible = false;
+            Pollolabel4.Visible = true;
             CaloriasnumericUpDown.Value = (CantidadACocinarnumericUpDown.Value * Convert.ToDecimal(CalPechugaPollo));
             CalActual = Convert.ToDouble(CaloriasnumericUpDown.Value);
             KcaloriasPorQuemar = CalActual;//revisar necesidad, posiblemente solo se necesite una de las 2
@@ -487,6 +490,9 @@ namespace Proyecto_Simulacion_Cocina
         private void BeefSteakradioButton_CheckedChanged(object sender, EventArgs e)
         {
             timer.Stop();
+            Chuletalabel9.Visible = false;
+            Pollolabel4.Visible = false;
+            beeflabel8.Visible = true;
             CaloriasnumericUpDown.Value = (CantidadACocinarnumericUpDown.Value * Convert.ToDecimal(CalBistec));
             CalActual = Convert.ToDouble(CaloriasnumericUpDown.Value);
             KcaloriasPorQuemar = CalActual;//revisar necesidad, posiblemente solo se necesite una de las 2
@@ -496,6 +502,9 @@ namespace Proyecto_Simulacion_Cocina
         private void ChuletaCerdoradioButton_CheckedChanged(object sender, EventArgs e)
         {
             timer.Stop();
+            beeflabel8.Visible = false;
+            Pollolabel4.Visible = false;
+            Chuletalabel9.Visible = Visible;
             CaloriasnumericUpDown.Value = (CantidadACocinarnumericUpDown.Value * Convert.ToDecimal(CalChuletaCerdo));
             CalActual = Convert.ToDouble(CaloriasnumericUpDown.Value);
             KcaloriasPorQuemar = CalActual;//revisar necesidad, posiblemente solo se necesite una de las 2
