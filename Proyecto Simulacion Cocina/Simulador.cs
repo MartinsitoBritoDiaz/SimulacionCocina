@@ -35,6 +35,10 @@ namespace Proyecto_Simulacion_Cocina
 
 
 
+        int seg = 0;
+        int min = 0;
+        int hor = 0;
+                    
         bool paso = true; //creo que se puede eliminar
 
         public Simulador()
@@ -91,10 +95,6 @@ namespace Proyecto_Simulacion_Cocina
                     }
                     else
                         paso = true;
-            
-                
-
-
                 
         }
 
@@ -110,7 +110,20 @@ namespace Proyecto_Simulacion_Cocina
                 tiempoestimado = (CalActual / kcalActual);
                 TiempoEstimadonumericUpDown.Value = Convert.ToDecimal(tiempoestimado/10);
 
-                TiemponumericUpDown.Value += Convert.ToDecimal(0.01); //no hace lo que debe, corregir, para que de 0.60 salte a 1.00
+
+                if(min == 60)
+                {
+                    hor += 1;
+                    min = 0;
+                }
+                if (seg == 61)
+                {
+                    min += 1;
+                    seg = 0;
+                }
+                seg += 1;
+                Relojlabel.Text = hor.ToString() + ":" + min.ToString() + ":" + seg.ToString();
+                //TiemponumericUpDown.Value += Convert.ToDecimal(0.01); //no hace lo que debe, corregir, para que de 0.60 salte a 1.00
 
 
 
@@ -121,10 +134,11 @@ namespace Proyecto_Simulacion_Cocina
                 if (KcaloriasPorQuemar <= 0)
                 {
                     timer.Stop();
-                    MessageBox.Show("Se ha terminado de cocinar");
+                    MessageBox.Show("Se ha terminado de cocinar", "Aviso!");
                     kcaloriasQuemadas = 0;
                     KcaloriasPorQuemar = 0;
                     CantidadACocinarnumericUpDown.Value = 0;
+                    
 
                     Estado1RadioButton.Checked = true;
                 }
@@ -134,9 +148,19 @@ namespace Proyecto_Simulacion_Cocina
                     {
                         timer.Stop();
                         if (KcaloriasPorQuemar <= (CalActual / 2))
-                            MessageBox.Show("La carne ha quedado a termino medio");
+                        {
+                            DialogResult dialogResult = MessageBox.Show("La carne ha quedado a termino medio, Desea seguir cocinando la carne?", "Aviso!", MessageBoxButtons.YesNo);
+                            if (dialogResult == DialogResult.No)
+                            {
+                                kcaloriasQuemadas = 0;
+                                KcaloriasPorQuemar = 0;
+                                CantidadACocinarnumericUpDown.Value = 0;
+                            }
+                        }
 
                     }
+
+                    int aux = 20;
                         
 
                 }
@@ -354,6 +378,11 @@ namespace Proyecto_Simulacion_Cocina
         }
 
         private void CaloriasnumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TiemponumericUpDown_ValueChanged(object sender, EventArgs e)
         {
 
         }
